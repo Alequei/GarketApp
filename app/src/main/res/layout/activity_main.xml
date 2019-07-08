@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/linea1"
+        android:background="#000">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="83dp"
+            android:layout_marginStart="100dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:text="GARKET"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold|normal"
+            android:textColor="@color/colorBlanco"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+         android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_person_black_24dp"
+            android:background="@color/colorNegro"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Ingresar usuario"
+                android:textAlignment="center"
+                android:typeface="monospace"
+                android:inputType="textPassword"
+                android:layout_marginStart="10dp"
+                />
+
+    </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_lock_black_24dp"
+                android:background="@color/colorNegro"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Ingresar usuario"
+                android:textAlignment="center"
+                android:typeface="monospace"
+                android:inputType="textPassword"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Olvidastes tu contraseña?"
+                android:textStyle="italic"
+                android:textColor="@color/colorNegro"
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Recordar contraseña"
+                android:textStyle="italic"
+                android:textColor="@color/colorNegro"
+                />
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorNegro"
+                android:src="@drawable/ic_fiber_smart_record_black_24dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/ingresar"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorNegro"
+                android:text="Ingresar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlanco"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
